@@ -1,0 +1,20 @@
+.main-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #8c96a3;
+}
+
+.main-footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__logo {
+  margin-bottom: 12px;
+}
+
+.main-footer__copy {
+  margin: 0;
+  font-size: 12px;
+}

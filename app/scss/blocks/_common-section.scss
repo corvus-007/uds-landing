@@ -1,0 +1,38 @@
+.common-section {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.common-section__header {
+  margin-bottom: ($gutter * 1.5);
+  text-align: center;
+}
+
+.common-section__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: ($gutter / 2);
+  font-weight: 600;
+  font-size: rem($font-size);
+  font-family: $secondary-font;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 40px;
+    margin: auto;
+    border-top: 2px solid $accent-color;
+  }
+}
+
+.common-section__body {
+
+}
+
+.common-section__footer {
+  text-align: center;
+  margin-top: $gutter;
+}

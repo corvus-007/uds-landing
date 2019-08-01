@@ -1,0 +1,58 @@
+@import "variables";
+@import "functions";
+@import "mixins";
+
+// Global
+@import "global/fonts";
+@import "global/base";
+// @import "global/layout";
+
+// Vendors
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";
+@import "../../node_modules/swiper/dist/css/swiper.min";
+
+// Blocks
+@import "blocks/container";
+@import "blocks/social";
+@import "blocks/socials";
+@import "blocks/button";
+@import "blocks/input";
+// @import "blocks/select";
+@import "blocks/field";
+@import "blocks/form";
+// @import "blocks/table";
+@import "blocks/popup";
+// @import "blocks/custom-ol";
+// @import "blocks/custom-ul";
+@import "blocks/textual";
+@import "blocks/common-section";
+// @import "blocks/out-cover-toggle";
+@import "blocks/main-header";
+// @import "blocks/main-nav";
+
+@import "blocks/welcome";
+@import "blocks/features";
+@import "blocks/free-tutorial";
+@import "blocks/targets";
+// @import "blocks/training-coach";
+// @import "blocks/training";
+@import "blocks/person-info";
+@import "blocks/person-info-carousel";
+@import "blocks/benefits-item";
+@import "blocks/benefits-carousel";
+@import "blocks/benefits";
+@import "blocks/our-team-carousel";
+@import "blocks/our-team";
+@import "blocks/systems-integrated-carousel";
+@import "blocks/systems-integrated";
+@import "blocks/person-about-uds-video";
+@import "blocks/person-about-uds";
+@import "blocks/videos-carousel";
+@import "blocks/videos";
+@import "blocks/main-cta-form";
+@import "blocks/main-cta-app";
+@import "blocks/main-cta";
+
+// @import "blocks/page";
+@import "blocks/main-footer";
+// @import "blocks/out-cover";

@@ -1,0 +1,13 @@
+build/
+other/
+node_modules/
+.publish/
+.DS_Store
+Thumbs.db
+.idea
+*.sublime*
+*.log
+*.psd
+*.ai
+*.pdf
+*.zip

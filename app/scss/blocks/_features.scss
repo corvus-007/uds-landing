@@ -1,0 +1,129 @@
+.features {
+}
+
+.features__list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -36px;
+}
+
+.features__item {
+  width: 100%;
+  margin-bottom: 36px;
+  line-height: 1.2;
+  text-align: center;
+
+  @include mq-range(375px, 1023px) {
+    @include calc-column-width(2, 20px);
+  }
+
+  @include mq-min(1024px) {
+    @include calc-column-width(4, 20px);
+  }
+}
+
+.features__link {
+  text-decoration: none;
+  color: $base-color;
+}
+
+.features__value {
+  position: relative;
+  display: block;
+  font-weight: 200;
+  font-size: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    width: 72px;
+    height: 72px;
+    background: url("images/shape.svg") no-repeat center;
+    background-size: contain;
+  }
+
+  .features__item:nth-child(1) &::before {
+  }
+
+  .features__item:nth-child(2) &::before {
+    transform: rotate(-110deg);
+  }
+
+  .features__item:nth-child(3) &::before {
+    transform: rotate(-70deg);
+  }
+
+  .features__item:nth-child(4) &::before {
+    transform: rotate(20deg);
+  }
+
+  span {
+    font-weight: lighter;
+    font-size: smaller;
+  }
+}
+
+.features__icon {
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  vertical-align: baseline;
+  fill: currentColor;
+  transition: 0.3s;
+
+  .features__link:hover &,
+  .features__link:focus & {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+}
+
+.features__caption {
+  display: block;
+  font-size: 14px;
+
+  b {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  @include mq-min(568px) {
+    font-size: 18px;
+
+    b {
+      font-size: 24px;
+    }
+  }
+}
+
+.features__footer {
+  margin-top: 64px;
+}
+
+.features__actions {
+}
+
+.features__actions-list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -16px;
+}
+
+.features__actions-item {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}

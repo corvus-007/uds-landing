@@ -1,0 +1,19 @@
+.systems-integrated {
+  background-color: #f2f5f9;
+}
+
+.systems-integrated__title {
+  max-width: 600px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+
+  @include mq-min(768px) {
+    font-size: 36px;
+  }
+}

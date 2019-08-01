@@ -1,0 +1,55 @@
+.person-about-uds {
+  overflow: hidden;
+}
+
+.person-about-uds__inner {
+  @include mq-min(1024px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.person-about-uds__content {
+  margin-bottom: 40px;
+
+  @include mq-min(1024px) {
+    position: relative;
+    width: 480px;
+    margin-bottom: 0;
+  }
+}
+
+.person-about-uds__title {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+
+  @include mq-min(768px) {
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+.person-about-uds__quote {
+  margin: 0;
+  font-size: 18px;
+
+  @include mq-min(768px) {
+    font-size: 20px;
+  }
+}
+
+.person-about-uds__video {
+  margin: 0;
+  margin-bottom: -76px;
+
+  @include mq-min(1024px) {
+    margin-bottom: 0;
+  }
+}

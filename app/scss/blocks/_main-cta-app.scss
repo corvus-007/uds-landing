@@ -1,0 +1,37 @@
+.main-cta-app {
+
+}
+
+.main-cta-app__list {
+  @include clear-list();
+
+  display: flex;
+  justify-content: space-evenly;
+
+  @include mq-min(667px) {
+    justify-content: flex-start;
+  }
+}
+
+.main-cta-app__item {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.main-cta-app__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  text-decoration: none;
+  background-color: #1b1626;
+  border-radius: 8px;
+
+  &:hover,
+  &:focus {
+    background-color: #000000;
+  }
+}

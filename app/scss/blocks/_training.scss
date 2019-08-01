@@ -1,0 +1,143 @@
+.training {
+  position: relative;
+}
+
+.training__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+
+  @include mq-min(768px) {
+    max-width: 50%;
+    margin-bottom: 0;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-right: 28px;
+  }
+
+  @include mq-min(1024px) {
+    align-items: flex-start;
+    padding-left: 28px;
+  }
+
+  @include mq-min(1280px) {
+    padding-left: 80px;
+  }
+}
+
+.training__title {
+  max-width: 440px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include mq-min(768px) {
+    text-align: left;
+  }
+
+  @include mq-min(1024px) {
+    font-size: 32px;
+  }
+}
+
+.training__list {
+  @include clear-list();
+
+  max-width: 440px;
+  margin-bottom: 40px;
+
+  li {
+    position: relative;
+    margin-bottom: 1em;
+    padding-left: 16px;
+    font-size: 18px;
+    line-height: 1.2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #644240;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq-min(768px) {
+    li {
+      font-size: 16px;
+
+      &::before {
+        top: 0.38em;
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  @include mq-min(1024px) {
+    li {
+      padding-left: 0;
+
+      &::before {
+        left: -16px;
+      }
+    }
+  }
+}
+
+.training__coach {
+  margin: 0;
+}
+
+.training__footer {
+  margin-top: 64px;
+}
+
+.training__actions {
+}
+
+.training__actions-list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -16px;
+}
+
+.training__actions-item {
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+}
+
+.training__picture {
+  @include make-fit-object(16, 10);
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include mq-min(768px) {
+    position: absolute;
+    top: 76px;
+    bottom: 76px;
+    left: 50%;
+    right: 0;
+    margin-left: initial;
+    margin-right: initial;
+  }
+}

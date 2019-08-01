@@ -1,0 +1,24 @@
+.our-team-carousel {
+  .swiper-slide {
+    transition: opacity 0.3s, transform 0.6s, filter 0.6s;
+    opacity: 0;
+    filter: grayscale(1);
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+    filter: grayscale(0);
+  }
+
+  .swiper-slide-active ~ .swiper-slide {
+    transform: scale3d(0.86, 0.86, 0.86);
+    opacity: 1;
+  }
+}
+
+.our-team-carousel__item {
+}
+
+.our-team-carousel__photo {
+  @include make-fit-object(300, 400);
+}

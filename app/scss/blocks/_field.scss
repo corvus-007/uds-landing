@@ -1,0 +1,49 @@
+.field {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.field__label {
+  position: absolute;
+  left: 8px;
+  transform-origin: left;
+  transform: translateY(20px);
+  font-weight: 500;
+  font-size: 14px;
+  color: $gray-134;
+  transition: 0.3s;
+  pointer-events: none;
+
+  .field--required &::after {
+    content: "*";
+    font-size: 14px;
+    color: $danger-color;
+  }
+
+  .field.active & {
+    transform: translateY(-8px) scale(0.857);
+  }
+}
+
+.field__control {
+  width: 100%;
+  position: relative;
+}
+
+.field__input {
+}
+
+.field__text {
+  display: block;
+  margin-top: 5px;
+  font-size: rem(14);
+  line-height: 1.25;
+  color: $muted-color;
+
+  .checkbox &,
+  .radiobox & {
+    margin-top: 0;
+  }
+}

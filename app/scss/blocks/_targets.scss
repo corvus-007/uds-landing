@@ -1,0 +1,86 @@
+.targets {
+  color: #ffffff;
+  background-image: linear-gradient(to top, #724cde, #8960cf);
+}
+
+.targets__title {
+  max-width: 440px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+
+  @include mq-min(768px) {
+    font-size: 36px;
+  }
+}
+
+.targets__list {
+  @include clear-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+}
+
+.targets__item {
+  width: 100%;
+  margin-bottom: 40px;
+  line-height: 1.25;
+  text-align: center;
+
+  @include mq-min(667px) {
+    @include calc-column-width(3, 20px);
+  }
+}
+
+.targets__icon-holder {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background-color: #413649;
+    border-radius: 50%;
+  }
+}
+
+.targets__icon {
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 8px;
+  fill: currentColor;
+}
+
+.targets__caption {
+  max-width: 280px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+.targets__free-tutorial {
+  max-width: 1020px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq-min(1024px) {
+    margin-top: 100px;
+  }
+}

@@ -1,0 +1,27 @@
+.social {
+
+}
+
+.social__link {
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  transition: 0.3s;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.social__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

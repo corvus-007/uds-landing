@@ -1,0 +1,32 @@
+.training-coach {
+  display: flex;
+  align-items: center;
+}
+
+.training-coach__avatar {
+  @include make-fit-object();
+
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  border-radius: 50%;
+}
+
+.training-coach__content {
+  max-width: 300px;
+  line-height: 1.2;
+}
+
+.training-coach__name {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.training-coach__description {
+  display: block;
+  font-size: 12px;
+  color: $gray-134;
+}

@@ -1,0 +1,15 @@
+.socials {
+  display: flex;
+  text-align: center;
+}
+
+.socials__list {
+  @include clear-list();
+
+  display: flex;
+  align-items: center;
+}
+
+.socials__item {
+
+}

@@ -1,0 +1,39 @@
+.main-cta-form {
+  display: grid;
+  grid-gap: 40px;
+
+  @include mq-min(768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include mq-min(1024px) {
+    grid-template-columns: auto;
+  }
+}
+
+.main-cta-form__field {
+  margin-bottom: initial;
+}
+
+.main-cta-form__action-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mq-min(768px) {
+    grid-column: 1 / -1;
+  }
+}
+
+.main-cta-form__submit {
+  flex-shrink: 0;
+}
+
+.main-cta-form__agree {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1;
+  color: $gray-134;
+}

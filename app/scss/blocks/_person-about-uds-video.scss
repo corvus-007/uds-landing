@@ -1,0 +1,82 @@
+.person-about-uds-video {
+  text-align: center;
+}
+
+.person-about-uds-video__wraplink {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-decoration: none;
+  color: $base-color;
+  outline: none;
+
+  @include mq-min(667px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include mq-min(1024px) {
+    align-items: flex-end;
+  }
+}
+
+.person-about-uds-video__picture {
+  max-width: 280px;
+
+  img {
+    display: block;
+  }
+
+  @include mq-min(1024px) {
+    max-width: none;
+    margin-left: -8%;
+    margin-right: -8px;
+    margin-bottom: -76px;
+  }
+}
+
+.person-about-uds-video__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  white-space: nowrap;
+
+  @include mq-min(667px) {
+    margin-bottom: 0;
+  }
+}
+
+.person-about-uds-video__caption {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.person-about-uds-video__person {
+  display: block;
+  font-size: 36px;
+}
+
+.person-about-uds-video__play {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin: 24px;
+  margin-bottom: 12px;
+  background-color: #ff4800;
+  background: #ff4800 url("images/icon-play.svg") no-repeat 58% 50%;
+  background-size: 32px;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  .person-about-uds-video__wraplink:hover &,
+  .person-about-uds-video__wraplink:focus & {
+    transform: scale(1.15);
+  }
+}
+
+.person-about-uds-video__where {
+  font-size: 18px;
+}

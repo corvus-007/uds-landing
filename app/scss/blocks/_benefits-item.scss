@@ -1,0 +1,23 @@
+.benefits-item {
+
+}
+
+.benefits-item__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  span {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    background-image: linear-gradient(to top, #e1d0fe 0.4em, rgba(#e1d0fe, 0) 0);
+    box-decoration-break: clone;
+  }
+}
+
+.benefits-item__description {
+  margin: 0;
+  font-size: 14px;
+}

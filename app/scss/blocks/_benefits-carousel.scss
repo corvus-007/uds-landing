@@ -1,0 +1,57 @@
+.benefits-carousel {
+  padding-bottom: 40px;
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  @include mq-min(1024px) {
+    padding-bottom: 0;
+
+    .swiper-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 256px 1fr;
+      grid-gap: 44px;
+      background: url("images/uds-logo.svg") no-repeat center;
+      background-size: 256px auto;
+    }
+
+    .swiper-slide {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
+      &:nth-child(4) {
+        grid-row: 1;
+      }
+
+      &:nth-child(5) {
+        grid-row: 2;
+      }
+
+      &:nth-child(6) {
+        grid-row: 3;
+      }
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
+
+  @include mq-min(1280px) {
+    .swiper-wrapper {
+      background-position-y: calc(50% - 24px);
+    }
+  }
+}

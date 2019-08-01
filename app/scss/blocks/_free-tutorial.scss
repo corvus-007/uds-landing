@@ -1,0 +1,132 @@
+.free-tutorial {
+  outline: none;
+
+  @include mq-min(667px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.free-tutorial__caption {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-family: "Liana", cursive;
+  text-align: center;
+
+  @include mq-min(667px) {
+    margin-right: 16px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  @include mq-min(1024px) {
+    font-size: 32px;
+  }
+}
+
+.free-tutorial__presentation {
+  margin: 0;
+
+  @include mq-min(667px) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: calc(100% - 20px);
+      bottom: calc(100% - 36px);
+      width: 120px;
+      height: 64px;
+      background: url("images/arrow-right-to-presentation.svg") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  @include mq-min(768px) {
+    &::before {
+      width: 160px;
+    }
+  }
+
+  @include mq-min(1024px) {
+    &::before {
+      width: 240px;
+    }
+  }
+}
+
+.free-tutorial__link {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.6s;
+
+  &:hover,
+  &:focus {
+    filter: brightness(1.1);
+  }
+}
+
+.free-tutorial__presentation-icon {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  // transform: translateY(4px);
+  background-color: #ff4800;
+  background: #ff4800 url("images/icon-file.svg") no-repeat center;
+  background-size: 40px;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  .free-tutorial__link:hover &,
+  .free-tutorial__link:focus & {
+    transform: scale(1.15);
+  }
+
+  @include mq-range(667px, 767px) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.free-tutorial__presentation-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+
+  @include mq-min(667px) {
+    font-size: 14px;
+  }
+
+  @include mq-min(768px) {
+    font-size: 16px;
+  }
+}
+
+.free-tutorial__presentation-name {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  @include mq-min(667px) {
+    font-size: 24px;
+  }
+
+  @include mq-min(768px) {
+    font-size: 28px;
+  }
+
+  @include mq-min(1024px) {
+    font-size: 36px;
+  }
+}

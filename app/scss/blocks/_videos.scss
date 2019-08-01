@@ -1,0 +1,19 @@
+.videos {
+  padding-top: 48px;
+  padding-bottom: 28px;
+  background-color: #f2f5f9;
+}
+
+.videos__carousel {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @include mq-min(1024px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.videos__video-frame {
+  @include make-fit-object(560, 315);
+}

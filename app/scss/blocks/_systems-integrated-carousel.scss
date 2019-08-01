@@ -1,0 +1,22 @@
+.systems-integrated-carousel {
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+}
+
+.systems-integrated-carousel__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  text-align: center;
+  box-sizing: border-box;
+
+  .systems-integrated-carousel__picture {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

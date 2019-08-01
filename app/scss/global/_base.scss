@@ -1,0 +1,29 @@
+
+html {
+  font-size: $font-size;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: $primary-font;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: $base-color;
+  background-color: #ffffff;
+  // scroll-padding-top: 72px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.visually-hidden {
+  @include visually-hidden();
+}

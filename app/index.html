@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Главная</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    @@include('blocks/main-header.html')
+
+    <main class="main">
+      <section class="welcome">
+        <div class="welcome__bgs">
+          <div class="welcome__bg-bubble">
+            <img src="images/welcome/bubble-silver.png" srcset="images/welcome/bubble-silver@2x.png 2x" role="presentation">
+          </div>
+          <div class="welcome__bg-bubble">
+            <img src="images/welcome/bubble-silver.png" srcset="images/welcome/bubble-silver@2x.png 2x" role="presentation">
+          </div>
+          <div class="welcome__bg-bubble">
+            <img src="images/welcome/bubble-purple.png" srcset="images/welcome/bubble-purple@2x.png 2x" role="presentation">
+          </div>
+          <div class="welcome__bg-bubble">
+            <img src="images/welcome/bubble-purple.png" srcset="images/welcome/bubble-purple@2x.png 2x" role="presentation">
+          </div>
+          <div class="welcome__bg-bubble">
+            <img src="images/welcome/bubble-purple.png" srcset="images/welcome/bubble-purple@2x.png 2x" role="presentation">
+          </div>
+        </div>
+        <div class="welcome__inner container">
+          <div></div>
+          <div class="welcome__white-bg"></div>
+          <div class="welcome__content">
+            <p class="welcome__installed-count">
+              <span class="visually-hidden">Более 6 млн. скачиваний на iOS и Android</span>
+              <img src="images/welcome/installed-count.png" srcset="images/welcome/installed-count@2x.png" width="391" role="presentation">
+            </p>
+            <h1 class="welcome__title"><span>Платформа клиентской лояльности</span></h1>
+            <p class="welcome__subtitle">В карман к потребителю – через мобильный телефон!</p>
+          </div>
+          <!-- <p class="welcome__intro">Добро пожаловать <br> в мир осознанного будущего!</p> -->
+          <div class="welcome__actions">
+            <ul class="welcome__actions-list">
+              <li class="welcome__actions-item">
+                <a class="welcome__action-link welcome__action-link--style-1" href=""><span>Презентация UDS за 1 минуту</span></a>
+              </li>
+              <li class="welcome__actions-item">
+                <a class="welcome__action-link welcome__action-link--style-2" href=""><span>Подключить бесплатную версию</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="welcome__socials socials">
+            <ul class="welcome__socials-list socials__list">
+              <li class="welcome__socials-item socials__item social" aria-label="Вконтакте">
+                <a class="welcome__social-link social__link" href="" target="_blank">
+                  <svg class="social__icon" width="16" height="16">
+                    <use xlink:href="images/symbols.svg#soc-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="welcome__socials-item socials__item social" aria-label="Instagram">
+                <a class="welcome__social-link social__link" href="" target="_blank">
+                  <svg class="social__icon" width="16" height="16">
+                    <use xlink:href="images/symbols.svg#soc-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="features common-section">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества</h2>
+
+          <ul class="features__list">
+            <li class="features__item">
+              <span class="features__value">80</span>
+              <span class="features__caption">
+                <b>процентов</b>
+                прибыли — приносят лояльные клиенты
+              </span>
+            </li>
+            <li class="features__item">
+              <span class="features__value"><span>×</span>2</span>
+              <span class="features__caption">
+                <b>чаще</b>
+                лояльные клиенты посещают ваше заведение
+              </span>
+            </li>
+            <li class="features__item">
+              <span class="features__value">3</span>
+              <span class="features__caption">
+                <b>человека</b>
+                в среднем приходят от каждого довольного клиента
+              </span>
+            </li>
+            <li class="features__item">
+              <span class="features__value">
+                <svg class="features__icon" width="16" height="16" role="presentation">
+                  <use xlink:href="images/symbols.svg#gift-box"></use>
+                </svg>
+              </span>
+              <span class="features__caption">
+                <b>подарки</b>
+                каждому участнику курса
+              </span>
+            </li>
+          </ul>
+
+          <div class="features__footer features__actions">
+            <ul class="features__actions-list">
+              <li class="features__actions-item">
+                <a class="button" href="">Получить консультацию</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="targets common-section">
+        <div class="container">
+          <h2 class="targets__title">Ключевые преимущества UDS</h2>
+          <ul class="targets__list">
+            <li class="targets__item">
+              <div class="targets__icon-holder">
+                <svg class="targets__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#relax"></use>
+                </svg>
+              </div>
+              <p class="targets__caption">У вас будет больше времени на решение стратегических вопросов, вместо текучки</p>
+            </li>
+            <li class="targets__item">
+              <div class="targets__icon-holder">
+                <svg class="targets__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#wallet"></use>
+                </svg>
+              </div>
+              <p class="targets__caption">За счет увеличения лояльности, клиенты будут тратить в 1,5 раза больше и в 2 раза чаще, так увеличится оборот</p>
+            </li>
+            <li class="targets__item">
+              <div class="targets__icon-holder">
+                <svg class="targets__icon" width="16" height="16">
+                  <use xlink:href="images/symbols.svg#bar-chart"></use>
+                </svg>
+              </div>
+              <p class="targets__caption">Все инструменты в совокупности дадут увеличение прибыли от 12% в квартал</p>
+            </li>
+          </ul>
+
+          <div class="targets__free-tutorial free-tutorial">
+            <p class="free-tutorial__caption">
+              Лучше один раз увидеть! <br>
+              Скачайте презентацию <br>
+              о возможностях системы!
+            </p>
+            <p class="free-tutorial__presentation">
+              <a class="free-tutorial__link" href="">
+                <span class="free-tutorial__presentation-icon"></span>
+                <span class="free-tutorial__presentation-text">
+                  презентация
+                  <em class="free-tutorial__presentation-name">Возможности <br> платформы</em>
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits common-section">
+        <div class="container">
+          <h2 class="visually-hidden">Почему выбирают UDS?</h2>
+          <div class="benefits__carousel benefits-carousel swiper-container" data-benefits-carousel>
+            <div class="swiper-wrapper">
+              <div class="benefits__item benefits-item swiper-slide">
+                <h3 class="benefits-item__title"><span>Замена пластиковых дисконтных карт</span></h3>
+                <p class="benefits-item__description">Дисконтные карты уже не удобны и неэффективны бизнесу. Ваши карты лояльности теперь в мобильных устройствах клиентов. Экономия на изготовление пластиковых карт.</p>
+              </div>
+              <div class="benefits__item benefits-item swiper-slide">
+                <h3 class="benefits-item__title"><span>CRM-система с базой клиентов</span></h3>
+                <p class="benefits-item__description">В UDS админ-панели Вы видите (имя и фамилию, день рождения, контактные данные, количество покупок и потраченных денег). Клиентская база формируется автоматически.</p>
+              </div>
+              <div class="benefits__item benefits-item swiper-slide">
+                <h3 class="benefits-item__title"><span>Коммуникация с клиентом</span></h3>
+                <p class="benefits-item__description">Дополнительные продажи просто напомнив о себе. Используйте бесплатные PUSH-уведомления, информируйте клиентскую базу о проводимых акциях и мероприятиях.</p>
+              </div>
+              <div class="benefits__item benefits-item swiper-slide">
+                <h3 class="benefits-item__title"><span>Контроль качества работы персонала</span></h3>
+                <p class="benefits-item__description">Круглосуточный контроль за качеством оказания услуг, благодаря системе сбора отзывов. Возможно дистанционно контролировать сотрудников из любой точки мира.</p>
+              </div>
+              <div class="benefits__item benefits-item swiper-slide">
+                <h3 class="benefits-item__title"><span>Усиление сарафанного радио</span></h3>
+                <p class="benefits-item__description">Эффект сарафанного радио за счет вознаграждения клиентов за рекомендации. Система рекомендаций Позволяет сделать каждого вашего клиента бесплатным промоутером вашего бизнеса.</p>
+              </div>
+              <div class="benefits__item benefits-item swiper-slide">
+                <h3 class="benefits-item__title"><span>Каталог товаров и услуг</span></h3>
+                <p class="benefits-item__description">Заполните раздел «Прайс». Информацию о Ваших товарах и услугах узнает каждый пользователь UDS. Клиенты могут покупать ваш товар или услугу прямо из мобильного приложения. Интернет магазин.</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="benefits__footer benefits__actions">
+            <ul class="benefits__actions-list">
+              <li class="benefits__actions-item">
+                <a class="benefits__action button" href="">Попробовать бесплатно</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-team common-section">
+        <div class="our-team__inner container">
+          <div class="our-team__content">
+            <h2 class="our-team__title">Наша команда</h2>
+            <div class="our-team__person-info person-info person-info-carousel swiper-container" data-person-info-carousel>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h3 class="person-info__name">Наталия Игнатюк</h3>
+                  <p class="person-info__summary">Сертифицированный коуч, бизнес-тренер, автор курсов «5 уверенных шагов карьерного роста», «Убеждения-залог финансового прорыва», «Эффективное достижение целей», «Курс финансовой грамотности для детей».</p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="person-info__name">Максим Иванов</h3>
+                  <p class="person-info__summary">Сертифицированный коуч, бизнес-тренер, автор курсов «5 уверенных шагов карьерного роста», «Убеждения-залог финансового прорыва»,</p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="person-info__name">Трофим Юдин</h3>
+                  <p class="person-info__summary">Сертифицированный коуч, бизнес-тренер, автор курсов «5 уверенных шагов карьерного роста», «Убеждения-залог финансового прорыва», «Эффективное достижение целей», «Курс финансовой грамотности для детей».</p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="person-info__name">Катерина Голановa</h3>
+                  <p class="person-info__summary">Сертифицированный коуч, бизнес-тренер, автор курсов «5 уверенных шагов карьерного роста», «Убеждения-залог финансового прорыва», «Эффективное достижение целей», «Курс финансовой грамотности для детей».</p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="person-info__name">Евгений Царёв</h3>
+                  <p class="person-info__summary">Сертифицированный коуч, бизнес-тренер, автор курсов «5 уверенных шагов карьерного роста», «Убеждения-залог финансового прорыва», «Эффективное достижение целей», «Курс финансовой грамотности для детей».</p>
+                </div>
+                <div class="swiper-slide">
+                  <h3 class="person-info__name">Дарья Гавриловa</h3>
+                  <p class="person-info__summary">Сертифицированный коуч, бизнес-тренер, автор курсов «5 уверенных шагов карьерного роста», «Убеждения-залог финансового прорыва», «Эффективное достижение целей», «Курс финансовой грамотности для детей».</p>
+                </div>
+              </div>
+              <div class="person-info-carousel__actions">
+                <div class="swiper-button-prev"></div>
+                <div class="person-info-carousel__pagination swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider main container -->
+          <div class="our-team__carousel our-team-carousel swiper-container" dir="rtl" data-our-team-carousel>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="our-team-carousel__item swiper-slide">
+                <div class="our-team-carousel__photo">
+                  <img src="https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                </div>
+              </div>
+              <div class="our-team-carousel__item swiper-slide">
+                <div class="our-team-carousel__photo">
+                  <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="">
+                </div>
+              </div>
+              <div class="our-team-carousel__item swiper-slide">
+                <div class="our-team-carousel__photo">
+                  <img src="https://images.unsplash.com/photo-1534515538060-80212d73acb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="">
+                </div>
+              </div>
+              <div class="our-team-carousel__item swiper-slide">
+                <div class="our-team-carousel__photo">
+                  <img src="https://images.unsplash.com/photo-1466839367266-2ee9f27151da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="">
+                </div>
+              </div>
+              <div class="our-team-carousel__item swiper-slide">
+                <div class="our-team-carousel__photo">
+                  <img src="https://images.unsplash.com/photo-1533497016719-cb32082a2338?ixlib=rb-1.2.1&auto=format&fit=crop&w=1364&q=80" alt="">
+                </div>
+              </div>
+              <div class="our-team-carousel__item swiper-slide">
+                <div class="our-team-carousel__photo">
+                  <img src="https://images.unsplash.com/photo-1534996962990-bea9a89c0e6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="systems-integrated common-section">
+        <div class="systems-integrated__inner container">
+          <h2 class="systems-integrated__title">Системы интегрированные с UDS</h2>
+          <!-- Slider main container -->
+          <div class="systems-integrated__carousel systems-integrated-carousel swiper-container" data-systems-integrated-carousel>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/1c.png" srcset="images/systems-integrated/1c@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/litebox.png" srcset="images/systems-integrated/litebox@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/bitrix24.png" srcset="images/systems-integrated/bitrix24@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/Poster.png" srcset="images/systems-integrated/Poster@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/paloma.png" srcset="images/systems-integrated/paloma@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/evotor.png" srcset="images/systems-integrated/evotor@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/smarttouch.png" srcset="images/systems-integrated/smarttouch@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/r_keeper.png" srcset="images/systems-integrated/r_keeper@2x.png 2x" alt="">
+                </div>
+              </div>
+              <div class="systems-integrated-carousel__slide swiper-slide">
+                <div class="systems-integrated-carousel__picture">
+                  <img src="images/systems-integrated/iiko.png" srcset="images/systems-integrated/iiko@2x.png 2x" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="person-about-uds common-section">
+        <div class="person-about-uds__inner container">
+          <div class="person-about-uds__content">
+            <h2 class="person-about-uds__title">Игорь Манн <br> о приложении UDS:</h2>
+            <blockquote class="person-about-uds__quote">
+              <p>
+                «За сценой меня спрашивали, буду ли рекомендовать UDS GAME?
+                Как Игорь Манн, который всем рекомендует привлекать больше клиентов, лучше их слушать, подключать сарафанный маркетинг, не порекомендует новое? Конечно рекомендую!»
+              </p>
+            </blockquote>
+          </div>
+          <p class="person-about-uds__video person-about-uds-video">
+            <a class="person-about-uds-video__wraplink" href="https://youtu.be/JYGpfjOtk7U" data-fancybox="">
+              <span class="person-about-uds-video__picture">
+                <img src="images/igor-mann.jpg" srcset="images/igor-mann@2x.jpg 2x" width="384" alt="Игорь Манн">
+              </span>
+              <span class="person-about-uds-video__text">
+                <span class="person-about-uds-video__caption">
+                  Выступление
+                  <span class="person-about-uds-video__person">Игоря Манна</span>
+                </span>
+                <span class="person-about-uds-video__play"></span>
+                <span class="person-about-uds-video__where">на конференции <br> Global Intellect Service</span>
+              </span>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="videos common-section">
+        <div class="videos__inner container">
+          <div class="videos__carousel videos-carousel swiper-container" data-videos-carousel>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="videos-carousel__slide-inner">
+                  <div class="videos__video-frame">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_ntAfXi7vVU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videos-carousel__slide-inner">
+                  <div class="videos__video-frame">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/f8IrAcLzrXw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videos-carousel__slide-inner">
+                  <div class="videos__video-frame">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qiGg-9Oza-w?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videos-carousel__slide-inner">
+                  <div class="videos__video-frame">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SNOPv_0HOhg?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="videos-carousel__slide-inner">
+                  <div class="videos__video-frame">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mVVWx5oiE64?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main-cta common-section">
+        <div class="main-cta__inner container">
+          <div class="main-cta__content">
+            <h2 class="main-cta__title"><span>Хотите работать современно? <br> Напишите нам!</span></h2>
+            <p class="main-cta__text">
+              Протестируйте возможности <mark>самостоятельно и бесплатно</mark>. А мы будем рады ответить на ваши вопросы и помочь максимально полно ощутить эффект UDS в вашем бизнесе.
+            </p>
+            <div class="main-cta__app main-cta-app">
+              <ul class="main-cta-app__list">
+                <li class="main-cta-app__item">
+                  <a class="main-cta-app__link" href="">
+                    <img src="images/appstore.svg" alt="Загрузите в App Store" width="132">
+                  </a>
+                </li>
+                <li class="main-cta-app__item">
+                  <a class="main-cta-app__link" href="">
+                    <img src="images/googleplay.svg" alt="Доступно в Google Play" width="132">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-cta__form-holder">
+            <form class="main-cta__form main-cta-form" action="" method="post">
+              <label class="main-cta-form__field field float-container">
+                <span class="field__label">Введите ваше имя</span>
+                <input type="text" class="field__input input" name="username" data-placeholder="">
+              </label>
+              <label class="main-cta-form__field field field--required float-container">
+                <span class="field__label">Телефон</span>
+                <input type="tel" class="field__input input" name="userphone" data-placeholder="" required>
+              </label>
+              <label class="main-cta-form__field field float-container">
+                <span class="field__label">Электронная почта</span>
+                <input type="email" class="field__input input" name="usermail" data-placeholder="">
+              </label>
+              <div class="main-cta-form__action-wrapper">
+                <p class="main-cta-form__agree"><small>Нажимая кнопку «Получить консультацию», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</small></p>
+                <button class="main-cta-form__submit button" type="submit">Получить консультацию</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('blocks/main-footer.html')
+  </div>
+  @@include('blocks/site-scripts.html')
+</body>
+</html>

@@ -1,0 +1,85 @@
+.main-cta {
+}
+
+.main-cta__inner {
+  @include mq-min(1024px) {
+    display: flex;
+  }
+}
+
+.main-cta__content {
+  margin-bottom: 48px;
+
+  @include mq-min(1024px) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  @include mq-min(1280px) {
+    max-width: 52%;
+  }
+}
+
+.main-cta__title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  margin-bottom: 28px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+
+  span {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    background-image: linear-gradient(to top, #e1d0fe 0.4em, rgba(#e1d0fe, 0) 0);
+    box-decoration-break: clone;
+  }
+
+  @include mq-min(667px) {
+    text-align: left;
+  }
+
+  @include mq-min(768px) {
+    font-size: 56px;
+    margin-bottom: 36px;
+  }
+
+  @include mq-min(1024px) {
+    font-size: 52px;
+  }
+
+  @include mq-min(1280px) {
+    font-size: 60px;
+  }
+}
+
+.main-cta__text {
+  margin: 0;
+  margin-bottom: 28px;
+  font-size: 16px;
+
+  @include mq-min(768px) {
+    margin-bottom: 36px;
+  }
+}
+
+.main-cta__app {
+}
+
+.main-cta__form-holder {
+  @include mq-min(1024px) {
+    flex-shrink: 0;
+    width: 380px;
+  }
+
+  @include mq-min(1280px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.main-cta__form {
+}
