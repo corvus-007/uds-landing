@@ -5,6 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
     mask: '+7 (999) 999-99-99'
   });
 
+  if (window.matchMedia('(pointer: fine)').matches) {
+    const sceneWelcome = document.querySelector('.welcome__bgs');
+    const sceneWelcomeContent = document.querySelector('.welcome__content');
+    new Parallax(sceneWelcome, {
+      invertX: false
+    });
+    new Parallax(sceneWelcomeContent, {
+      selector: '.welcome__installed-count'
+    });
+  }
+
   const ourTeamCarousel = new Swiper('[data-our-team-carousel]', {
     // Optional parameters
     spaceBetween: 24,
@@ -15,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     breakpointsInverse: true,
     breakpoints: {
       667: {
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       1280: {
         slidesPerView: 4,
@@ -50,8 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-
-
   if (window.matchMedia('(max-width: 1023px)').matches) {
     const benefitsCarousel = new Swiper('[data-benefits-carousel]', {
       // Optional parameters
@@ -63,35 +72,38 @@ document.addEventListener('DOMContentLoaded', function() {
       breakpointsInverse: true,
       breakpoints: {
         768: {
-          slidesPerView: 2,
-        },
+          slidesPerView: 2
+        }
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination'
       }
     });
   }
 
-  const systemsIntegratedCarousel = new Swiper('[data-systems-integrated-carousel]', {
-    speed: 800,
-    slidesPerView: 2,
-    centeredSlides: true,
-    spaceBetween: 24,
-    loop: true,
-    autoplay: true,
-    breakpointsInverse: true,
-    breakpoints: {
-      667: {
-        slidesPerView: 3,
-      },
-      1024: {
-        slidesPerView: 5,
-      },
-      1280: {
-        slidesPerView: 7,
+  const systemsIntegratedCarousel = new Swiper(
+    '[data-systems-integrated-carousel]',
+    {
+      speed: 800,
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 24,
+      loop: true,
+      autoplay: true,
+      breakpointsInverse: true,
+      breakpoints: {
+        667: {
+          slidesPerView: 3
+        },
+        1024: {
+          slidesPerView: 5
+        },
+        1280: {
+          slidesPerView: 7
+        }
       }
     }
-  });
+  );
 
   const videosCarousel = new Swiper('[data-videos-carousel]', {
     speed: 800,
@@ -102,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
     allowTouchMove: false,
     breakpoints: {
       667: {
-        slidesPerView: 2,
+        slidesPerView: 2
       },
       1024: {
         slidesPerView: 4,

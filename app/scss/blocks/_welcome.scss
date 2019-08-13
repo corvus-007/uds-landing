@@ -9,6 +9,13 @@
 }
 
 .welcome__bgs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: none !important;
+  transform-style: initial !important;
   pointer-events: none;
   user-select: none;
 
@@ -23,47 +30,49 @@
   position: absolute;
 
   &:nth-child(1) {
-    left: 0;
-    top: 0;
+    top: calc(264px / -2) !important;
+    left: calc(264px / -2) !important;
     width: 264px;
     height: 264px;
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
   }
 
   &:nth-child(2) {
+    top: calc(8px - 424px / 2) !important;
+    left: calc(56% - 424px / 2) !important;
     z-index: 2;
-    left: 56%;
-    top: 8px;
     width: 424px;
     height: 424px;
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
   }
 
   &:nth-child(3) {
-    left: 12%;
-    top: 20%;
+    top: 20% !important;
+    left: 12% !important;
     width: 84px;
     height: 84px;
   }
 
   &:nth-child(4) {
-    left: 40%;
-    bottom: 12%;
+    top: initial !important;
+    left: 40% !important;
+    bottom: 12% !important;
     width: 116px;
     height: 116px;
   }
 
   &:nth-child(5) {
-    left: 0%;
-    bottom: 2%;
+    top: initial !important;
+    left: 0% !important;
+    bottom: calc(2% - 112px / 2) !important;
     width: 112px;
     height: 112px;
-    transform: translate(-50%, 0);
+    // transform: translate(-50%, 0);
   }
 
   @include mq-min(1280px) {
     &:nth-child(2) {
-      left: 60%;
+      left: calc(60% - 424px / 2) !important;
     }
   }
 }
